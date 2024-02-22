@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body-content {
+  background-color: #fdf5c9;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  background-color: #6b3e26;
+  padding: 10px 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-container {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
+}
+
+.title {
+  font-size: 1.2em;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  color: #fdf5c9;
+}
+
+.navbar-brand {
+  text-decoration: none;
+}
+
+.title:hover{
+  text-decoration: underline;
+}
+
+.navbar-links {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-links a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-links > * {
+  padding: 10px 15px;
+  color: #fdf5c9;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-btn {
+  background-color: #6b3e26;
+  padding: 10px 20px;
+  border: 2px solid #fdf5c9;
+  border-radius: 10%;
+  color: #fdf5c9;
+}
+
+.nav-btn:hover {
+  background-color: #fdf5c9;
+  color: #6b3e26;
 }
