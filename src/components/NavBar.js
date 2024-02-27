@@ -1,12 +1,14 @@
 import '../App.css';
+import { Link } from "react-router-dom";
 
 function NavBar() {
+  
   return (
     <nav className="navbar">
       <div className="container-fluid navbar-container">
-        <a className="navbar-brand" href="#">
+        <Link to = "/" className="navbar-brand">
           <div className="title">Happy Endings</div>
-        </a>
+        </Link>
         <div className="navbar-links">
           <a href="#" className="p-6">About</a>
           <a href="#">Mission</a>
