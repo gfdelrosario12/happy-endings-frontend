@@ -1,5 +1,5 @@
 import "../App.css";
-import ceo from "../components/assets/team/CEO.jpg";
+import ceo from "./assets/team/CEO.jpg";
 import NavBar from "./NavBar";
 
 function Body() {
