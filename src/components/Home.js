@@ -2,9 +2,9 @@ import "../App.css";
 import ceo from "./assets/team/CEO.jpg";
 import NavBar from "./NavBar";
 
-function Body() {
+function Home() {
   return (
-    <div>
+    <div className="App">
       <NavBar />
       <div className="body-content">
         <div className="body-container">
@@ -86,4 +86,4 @@ function Body() {
   );
 }
 
-export default Body;
+export default Home;
